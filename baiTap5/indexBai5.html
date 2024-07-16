@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleBai5.css">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Tính tiền thưởng tết cho nhân viên</h1>
+        <form id="bonusForm" class="mt-4">
+            <div class="mb-3">
+                <label for="years" class="form-label">Số Năm Làm Việc</label>
+                <input type="number" class="form-control" id="years" name="years" min="0" required>
+            </div>
+            <div class="mb-3">
+                <label for="familyMembers" class="form-label">Số Người Trong Gia Đình</label>
+                <input type="number" class="form-control" id="familyMembers" name="familyMembers" min="0" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateBonus()">Tính Thưởng</button>
+        </form>
+        <p id="result" class="mt-4"></p>
+    </div>
+</body>
+<script src="./indexBai5.js"></script>
+
+</html>
